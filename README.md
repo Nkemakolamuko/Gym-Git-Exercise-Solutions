@@ -1147,14 +1147,6 @@ To github.com:Nkemakolamuko/bundle1_exercise_1.git
 
 ```bash
 
-```
-
-## Bundle 04
-
-### Exercise_2
-
-```bash
-
 vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (ft/home-page-redesign)
 $ git checkout main
 Switched to branch 'main'
