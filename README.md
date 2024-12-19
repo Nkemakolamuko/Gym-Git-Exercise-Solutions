@@ -1034,3 +1034,117 @@ Everything up-to-date
 branch 'ft/team-page' set up to track 'origin/ft/team-page'.
 
 ```
+
+## Bundle 03
+
+### Exercise_2
+
+```bash
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (ft/faq-page)
+$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (ft/home-page-redesign)
+$ git branch main
+fatal: a branch named 'main' already exists
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (main)
+$ ls
+about.html  assets/  home.html  index.html  script.js  services.html  style.css  team.html
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        contact.html
+        faq.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (main)
+$ git add contact.html faq.html
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (main)
+$ git commit -m "Some modification on the pages -"
+[main b2d35fd] Some modification on the pages -
+ 2 files changed, 22 insertions(+)
+ create mode 100644 contact.html
+ create mode 100644 faq.html
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 599 bytes | 599.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To github.com:Nkemakolamuko/bundle1_exercise_1.git
+   838db10..b2d35fd  main -> main
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (ft/home-page-redesign)
+$ git rebase origin/main
+dropping 9fe068ff934911a75f54b0cfea5259d2f9253c9e Add contact page - -- patch contents already upstream
+dropping 915443ab3273fe343b05f5a7e518d880f8fab67e Create and add an faq page - -- patch contents already upstream
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (ft/home-page-redesign)
+$ ls
+about.html  assets/  contact.html  faq.html  home.html  index.html  script.js  services.html  style.css  team.html
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (ft/home-page-redesign)
+$ git status
+On branch ft/home-page-redesign
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (ft/home-page-redesign)
+$ git add home.html
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (ft/home-page-redesign)
+$ git commit -m "Make some further modifications --"
+[ft/home-page-redesign de87bb6] Make some further modifications --
+ 1 file changed, 1 insertion(+)
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (ft/home-page-redesign)
+$ git push origin ft/home-page-redesign
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1.06 KiB | 542.00 KiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/Nkemakolamuko/bundle1_exercise_1/pull/new/ft/home-page-redesign
+remote:
+To github.com:Nkemakolamuko/bundle1_exercise_1.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+
+```
+
+## Bundle 04
+
+### Exercise_1
+
+```bash
+
+```
