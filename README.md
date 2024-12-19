@@ -1236,3 +1236,89 @@ To github.com:Nkemakolamuko/gym-git-exercise-clone.git
  * [new branch]      main -> main
 
 ```
+
+## Bundle 04
+
+### Exercise_2
+
+```bash
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (main)
+$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (ft/footer)
+$ touch footer.html
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (ft/footer)
+$ git add footer.html
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (ft/footer)
+$ git commit -m "Create a footer file --"
+[ft/footer 2c8f046] Create a footer file --
+ 1 file changed, 11 insertions(+)
+ create mode 100644 footer.html
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (ft/footer)
+$ git add footer.html
+git
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (ft/footer)
+$ git commit -m "Added some extra features --"
+[ft/footer 932341d] Added some extra features --
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (ft/footer)
+$ git push --set-upstream origin ft/footer
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 752 bytes | 125.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/Nkemakolamuko/bundle1_exercise_1/pull/new/ft/footer
+remote:
+To github.com:Nkemakolamuko/bundle1_exercise_1.git
+ * [new branch]      ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (ft/footer)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (main)
+$ git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (ft/squashing)
+$ git merge --squash ft/footer
+Updating ae939ed..932341d
+Fast-forward
+Squash commit -- not updating HEAD
+ footer.html | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+ create mode 100644 footer.html
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (ft/squashing)
+$ git commit -m "Create the footer page -- and footer changes squashing --"
+[ft/squashing 677696e] Create the footer page -- and footer changes squashing --
+ 1 file changed, 14 insertions(+)
+ create mode 100644 footer.html
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (ft/squashing)
+$ git status
+On branch ft/squashing
+nothing to commit, working tree clean
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (ft/squashing)
+$ git push origin ft/footer
+Everything up-to-date
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/gym-git-exercise-solutions/all-solutions/project (ft/squashing)
+$ git push --set-upstream origin ft/footer
+Everything up-to-date
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+
+```
