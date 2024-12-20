@@ -1322,3 +1322,58 @@ Everything up-to-date
 branch 'ft/footer' set up to track 'origin/ft/footer'.
 
 ```
+
+## Bundle 05
+
+### Exercise_1
+
+[text](https://nkemakolamuko.github.io/gym-git-exercises/)
+
+## Bundle 05
+
+### Exercise_2
+
+```bash
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda
+$ git clone git@github.com:Nkemakolamuko/git-cafe-exercise-forked.git
+Cloning into 'git-cafe-exercise-forked'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 107 (delta 5), reused 4 (delta 4), pack-reused 92 (from 1)
+Receiving objects: 100% (107/107), 1.95 MiB | 364.00 KiB/s, done.
+Resolving deltas: 100% (5/5), done.
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda
+$ ls
+codewars/       git-cafe-exercise-forked/    practice_dom/
+first_project/  gym-git-exercise-solutions/  udacity_tutorial/
+gate/           practice/                    web-clone/
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda
+$ cd git-cafe-exercise-forked/
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/git-cafe-exercise-forked (main)
+$ code .
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/git-cafe-exercise-forked (main)
+$ git add index.html
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/git-cafe-exercise-forked (main)
+$ git commit -m "Change the Welcome to our place - to - Welcome to our restaurant -"
+[main 78367cc] Change the Welcome to our place - to - Welcome to our restaurant -
+ 1 file changed, 399 insertions(+), 239 deletions(-)
+
+vinti@SLIMs MINGW64 ~/OneDrive/Desktop/Projects/Gym_Rwanda/git-cafe-exercise-forked (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.58 KiB | 268.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:Nkemakolamuko/git-cafe-exercise-forked.git
+   d1d3f9c..78367cc  main -> main
+
+```
